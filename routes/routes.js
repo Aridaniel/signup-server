@@ -26,4 +26,9 @@ const securePassword = await bcrypt.hash(request.body.password, saltPassword)
 })
 
 
+router.get('/', (request, response) => {
+    response.send('HALLOOOOO')
+})
+
+
 module.exports = router
